@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to Bag</title>
+
+    <link rel="stylesheet" href="AddToBag.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Shopping Bag</h1>
+      <div class="navigation">
+        <nav id="nav">
+          <div class="navtext">
+            <input type="checkbox" id="check" />
+            <span>0/1 ITEMS SELECTED</span>
+          </div>
+
+          <div class="navoption">
+            <div class="remove">REMOVE</div>
+            <span class="divider"></span>
+            <div class="wishlist">MOVE TO WISHLIST</div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="productDetails">
+        <div class="image">
+          <img src="yellow.jpeg" alt="yellow shirt" />
+        </div>
+        <div class="otherdetails">
+          <div class="productname">Roadster</div>
+          <span>Men Yellow Black Pure Cotton Typography Printed T-shirt</span>
+          <span>Sold by: PRIVATE LIMITED</span>
+
+          <div class="sizeqty">
+            <select id="size" name="size" onchange="updateLabel(this, 'Size: ')">
+              
+              <option value="28">Size: 28</option>
+              <option value="30">Size: 30</option>
+              <option value="32">Size: 32</option>
+              <option value="34">Size: 34</option>
+              <option value="36">Size: 36</option>
+            </select>
+          
+            <select id="quantity" name="quantity" onchange="updateLabel(this, 'Qty: ')">
+              <option value="1">Qty: 1</option>
+              <option value="2">Qty: 2</option>
+              <option value="3">Qty: 3</option>
+              <option value="4">Qty: 4</option>
+              <option value="5">Qty: 5</option>
+              <option value="6">Qty: 6</option>
+            </select>
+          </div>
+          
+         
+          
+
+          <div class="prices">
+            <span class="price">₹857</span>
+            <span class="mrp">₹2,599</span>
+            <span class="discount">67% OFF</span>
+          </div>
+
+          <div class="cupondiscoutn">Coupon Discount: <span>₹172</span></div>
+
+          <span id="return">
+            <img id="easyret" src="easy-return.png" alt="return" />
+            <span style="color: black">14 days</span> return available
+          </span>
+
+          <span id="deliver">
+            <img id="tick" src="checkmark.png" alt="tick" />
+            Delivery by <span style="color: black">16 July 2025</span>
+          </span>
+        </div>
+      </div>
+      <hr />
+
+      <h2 style="text-align: center">Price Details</h2>
+
+      <div class="priceDetails">
+        <span>PRICE DETAILS(1 Items)</span>
+        <div class="totalmrp">
+          <span>Total MRP</span>
+          <span style="float: right">₹2,599</span>
+        </div>
+
+        <div class="MRPDis">
+          <span>Discount on MRP</span>
+          <span style="float: right; color: green">₹1,742</span>
+        </div>
+
+        <div class="coupon">
+          <span>Coupon Discount</span>
+          <span style="float: right; color: green">₹172</span>
+        </div>
+
+        <div class="platformfee">
+          <span
+            >Platform Fee
+            <span style="color: red; font-weight: 600">Know more</span>
+          </span>
+          <span style="float: right">₹20</span>
+        </div>
+
+        <div class="shippingfee">
+          <span
+            >Shipping Fee
+            <span style="color: red; font-weight: 600">Know more</span>
+          </span>
+          <span style="float: right; color: green">FREE</span>
+        </div>
+
+        <span id="forYou">Free shipping for you</span>
+        <hr />
+
+        <div class="totalamt">
+          <span>Total Amount</span>
+          <span style="float: right">₹857</span>
+        </div>
+
+        <div class="buttons">
+          <button id="buy">BUY NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="AddToBag.js"></script>
+  </body>
+</html>

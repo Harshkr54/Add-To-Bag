@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centering vertically */
+    background-color: #f9f9f9;
+  }
+  .main {
+    width: 60%;
+    height: auto;
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .navigation {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .navoption div:hover {
+    /* Added hover effect */
+    color: #007bff;
+    cursor: pointer;
+  }
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navoption {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+  }
+
+  .remove,
+  .wishlist {
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .divider {
+    width: 1px;
+    height: 16px;
+    background-color: #ccc;
+  }
+
+  .productDetails {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .image img {
+    width: auto;
+    height: auto;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 130px;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  .otherdetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .productname {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  span {
+    font-size: 14px;
+    color: gray;
+  }
+
+  .sizeqty select {
+    font-size: 16px; /* Increase text size */
+    padding: 8px 12px; /* Increase padding inside dropdown */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Round edges */
+    background-color: #f8f8f8; /* Light background */
+    cursor: pointer;
+  }
+
+  #size,
+  #quantity {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background-color: rgb(227, 225, 225);
+    border-radius: 5px;
+  }
+
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  .mrp {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 10px;
+  }
+  .discount {
+    font-size: 16px;
+    color: red;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  .cupondiscoutn {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+  }
+  .cupondiscoutn span {
+    font-size: 14px;
+    color: green;
+  }
+
+  #return,
+  #deliver {
+    color: black;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #return span,
+  #deliver span {
+    font-weight: bold;
+    color: black; /* Unified text color */
+  }
+
+  #easyret,
+  #tick {
+    width: 16px;
+    height: 16px;
+  }
+
+  hr {
+    border: 0.5px solid gray;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .productDetails {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .otherdetails {
+      gap: 5px;
+    }
+
+    .image img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .sizeqty {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons{
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .priceDetails {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 5px #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1 */
+  }
+
+  #forYou {
+    font-size: 10px;
+    display: flex;
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 10px;
+}
+
+#buy {
+    width: 50%; 
+    height: 40px;
+    background-color: rgb(255, 63, 108);
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 5px; 
+    cursor: pointer;
+    text-align: center; 
+}
